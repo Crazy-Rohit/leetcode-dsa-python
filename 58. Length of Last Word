@@ -5,5 +5,7 @@ class Solution(object):
         :rtype: int
         """
         s=s.strip()
+        # strip() removes leading and trailing whitespace (spaces, tabs, newlines).
         return len(s.split()[-1])
+        # split() breaks the string into words using whitespace as the separator.
         
