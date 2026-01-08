@@ -1,6 +1,6 @@
-# 📘 LeetCode DSA Problems – Python Solutions
+# 📘 DSA Problems – Python Solutions
 
-This repository contains my personal solutions to **Data Structures and Algorithms (DSA)** problems from [LeetCode](https://leetcode.com/), written in **Python 3**.
+This repository contains my personal solutions to **Data Structures and Algorithms (DSA)** problems written in **Python 3**.
 
 These solutions are intended for:
 - Practicing and revising DSA concepts
