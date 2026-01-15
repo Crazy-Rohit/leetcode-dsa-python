@@ -1,0 +1,30 @@
+# 204. Count Primes
+Link: https://leetcode.com/problems/count-primes/description/
+
+
+# Solution: Sieve of Eratosthenes
+
+class Solution(object):
+    def countPrimes(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n<=2:
+            return 0
+
+        dp=[1]*n
+        dp[0]=0
+        dp[1]=0
+
+        i=2
+        while i*i<n:
+            if dp[i]==1:
+                for j in range(i*i,n,i):
+                    dp[j]=0
+            i=i+1
+
+        return sum(dp)
+
+
+        
