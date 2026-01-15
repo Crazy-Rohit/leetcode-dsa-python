@@ -1,0 +1,13 @@
+# GFG: LCM of two numbers
+
+# Link: https://www.geeksforgeeks.org/problems/lcm-of-two-numbers/1
+
+# Solution
+
+class Solution:
+       
+    def lcm(self, a, b):
+        # code here
+        for i in range(a,a*b+a,a):
+            if i%b==0:
+                return i
