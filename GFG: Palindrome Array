@@ -1,0 +1,18 @@
+# GFG: Palindrome Array
+
+# Link: https://www.geeksforgeeks.org/problems/perfect-arrays4645/1?page=1&sortBy=difficulty
+
+# Solution:
+
+
+from typing import List
+
+
+class Solution:
+    def isPerfect(self, arr : List[int]) -> bool:
+        # code here
+        if arr==arr[::-1]:
+            return True
+        
+        return False
+        
