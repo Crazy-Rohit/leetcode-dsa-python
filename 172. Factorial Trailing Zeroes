@@ -1,0 +1,19 @@
+# 172. Factorial Trailing Zeroes
+
+# Link: https://leetcode.com/problems/factorial-trailing-zeroes/description/
+
+# Solution
+
+class Solution(object):
+    def trailingZeroes(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        a,x=5,0
+        while a<=n:
+            x=x+(n//a)
+            a=a*5
+        
+        return x
+
