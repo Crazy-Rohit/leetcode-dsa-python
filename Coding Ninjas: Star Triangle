@@ -1,0 +1,12 @@
+# Coding Ninjas: Star Triangle
+# Link: https://www.naukri.com/code360/problems/star-triangle_6573671?interviewProblemRedirection=true&page=2&difficulty%5B%5D=Easy&leftPanelTabValue=PROBLEM
+
+# Solution (Optimized approach)
+def nStarTriangle(n: int) -> None:
+    # Write your code here.
+    for i in range(1,n+1):
+        sp=n-i
+        st=2*i-1
+        print(" "*sp+"*"*st)
+
+    pass
