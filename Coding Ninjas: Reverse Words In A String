@@ -1,0 +1,11 @@
+# Coding Ninjas: Reverse Words In A String
+
+# Link: https://www.naukri.com/code360/problems/reverse-words_696444?interviewProblemRedirection=true&difficulty%5B%5D=Easy&leftPanelTabValue=PROBLEM
+
+# Solution:
+def reverseString(str: str) -> str:
+    # Write your code from here.
+    sen=str.split(" ")
+    sen.reverse()
+
+    return " ".join(sen)
