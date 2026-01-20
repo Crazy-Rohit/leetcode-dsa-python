@@ -1,0 +1,17 @@
+# Coding Ninjas: Check If The String Is A Palindrome
+
+# Link: https://www.naukri.com/code360/problems/check-if-the-string-is-a-palindrome_1062633?interviewProblemRedirection=true&difficulty%5B%5D=Easy&leftPanelTabValue=PROBLEM
+
+# Solution:
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def checkPalindrome(s):
+    # Write your code here
+	# Return a boolean
+	#isalnum(bool)
+	fil=''.join(a.lower() for a in s if a.isalnum())
+
+	return fil==fil[::-1]
