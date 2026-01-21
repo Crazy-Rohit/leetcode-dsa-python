@@ -1,0 +1,56 @@
+# 7. Reverse Integer
+
+# Link: https://leetcode.com/problems/reverse-integer/description/
+
+# Solutions:
+## Approach 1:
+
+class Solution(object):
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        p=abs(x)
+        a=[]
+        while p>0:
+            a.append(p%10)
+            p=p//10
+        
+        n=len(a)-1
+        s=0
+        for i in range(0,len(a)):
+            s=s+a[i]*(10**n)
+            n=n-1
+        
+        if s>=((-2)**31) and s<=((2**31)-1):
+            if x>=0:
+                return s
+            else:
+                return -s
+        return 0
+
+
+
+
+## Approach 2
+
+class Solution(object):
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        p=abs(x)
+        s=str(p)
+        s=s[::-1]
+        s=int(s)
+        
+        if s>=((-2)**31) and s<=((2**31)-1):
+            if x>=0:
+                return s
+            else:
+                return -s
+        return 0
+
+        
